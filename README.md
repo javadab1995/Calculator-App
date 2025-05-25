@@ -7,7 +7,7 @@ It supports both mouse and keyboard input, handles edge cases (like trailing ope
 
 ## 🚀 Live Demo
 
-👉 [Click here to try it live](https://your-github-username.github.io/your-repo-name)  
+👉 [Click here to try it live](https://javadab1995.github.io/Calculator-App/)  
 _(Replace the link with your GitHub Pages or Netlify deployment)_
 
 ---
