@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.1/math.min.js"></script>
+   
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body  class="bg-slate-200 text-slate-700  ">
+  
+<header class="flex grow h-16 rounded-b-xl bg-slate-400 text-slate-50 items-center justify-between px-10 text-2xl tracking-[3px] ">
+
+ <div>
+  <h1>ماشین حساب</h1>
+ </div>
+</header>
+
+
+ <main class=" mt-20 w-full flex items-center  " >
+  <section class="flex mr-auto ml-auto bg-slate-100  basis-[800px] h-[800px] justify-center items-center sm:px-4 px-2">
+    <div class="bg-slate-500 sm:w-10/12 md:w-8/12 h-[700px] rounded-3xl p-5 flex flex-col w-11/12 ">
+      <div class="flex justify-center ">
+        <input maxlength="16" disabled type="text" class="bg-slate-200 w-full h-48 rounded-3xl input p-5 text-4xl flex items-end max-w-[470px] " dir="ltr" />
+       </div>
+       <div class="grid md:gap-x-14 sm:gap-x-10 gap-x-8 gap-y-8 sm:gap-y-6 w-full grid-cols-4 grid-rows-5 mt-14">
+        <button class="operator  rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">/</button>
+        <button class="peresent rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">%</button>
+        <button class="cleaner rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">&#8619;</button>
+        <button class="empty rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">&#169;</button>
+        <button class="operator  rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">*</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">9</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">8</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">7</button>
+        <button class="operator  rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">-</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">6</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">5</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">4</button>
+        <button class="operator  rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">+</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">3</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">2</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">1</button>
+        <button class="equal bg-slate-700 rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">&#61;</button>
+        <button class="numbers bg-orange-400 rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">.</button>
+        <button class="bg-orange-400 rounded-full text-center flex items-center   text-2xl numbers text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">0</button>
+        <button class=" rounded-full text-center flex items-center  sm:text-5xl text-4xl text-orange-50 justify-center sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">&#x27F3;</button>
+       </div>
+    </div>
+  </section>
+ </main>
+
+<script src="./script.js"></script>
+</body>
+</html>
